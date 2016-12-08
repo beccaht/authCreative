@@ -24,19 +24,6 @@
        <input type="submit" value="Save">
     </form>       
    
-    <form method="POST" action="/user/updateById">
-      <div class="form-group">
-        <label>Make:</label> <input id="make" type="text" class="form-control" ng-model="car.make"></input>
-        <strong>Model: </strong> <input type="text" class="form-control" ng-model="model"></input>
-         <br> <br>
-        <strong>Year: </strong> <input type="text" class="form-control" ng-model="year"></input>
-        <strong>Miles: </strong> <input type="text" class="form-control" ng-model="miles"></input>
-        <br> <br>
-        <strong>Picture URL:</strong> <input type="text" class="form-control" ng-model="picUrl"></input>
-        <button type="submit" class="btn btn-primary">Add Car</button>
-      </div>
-    </form>
-
   </div>
   <form method="POST" action="/user/delete">
     <input type="submit" value="Delete User">

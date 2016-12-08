@@ -1,0 +1,16 @@
+    body
+    {
+        background-image:url("https://images.unsplash.com/photo-1479981280584-037818c1297d?dpr=1&auto=format&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb&crop=");
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        font-family: 'Titillium Web', sans-serif;
+        overflow: scroll;
+        font-size: 20px;
+    }
+
+    .other{
+        padding: 27px 20px;
+        font-size: 18px;
+    }
+
