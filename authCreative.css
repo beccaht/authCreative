@@ -1,0 +1,72 @@
+    body
+    {
+       
+        background-image:url("https://images.unsplash.com/photo-1461695008884-244cb4543d74?dpr=1&auto=format&fit=crop&w=767&h=432&q=80&cs=tinysrgb&crop=");
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        font-family: 'Titillium Web', sans-serif;
+        overflow: scroll;
+        font-size: 20px;
+    }
+
+    h2{
+        color: white;
+        font-weight: bold;
+        font-size: 75px;
+    }
+
+    #header{
+        display: block;
+        text-align: center;
+    }
+
+    #instructions{
+        margin-top: 25px;
+        color: white;
+
+    }
+
+    .form-control{
+        float:right;
+        clear: both;
+    }
+
+    .center {
+        margin-top: 20px;
+        display: block;
+        text-align: center;
+    }
+
+    .container{
+        margin-top: 230px;
+    }
+
+    input[type=text], select {
+        width: 33%;
+        padding: 27px 20px;
+        margin-top: 25px;
+        margin-bottom: 25px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        font-size: 18px;
+    }
+
+    input[type=button] {
+        width: 33%;
+        background-color: #212121;
+        color: white;
+        padding: 15px 20px;
+        margin: 25px 0;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 18px;
+        float: right;
+        clear: right;
+
+    }
+
+    input[type=button]:hover {
+        background-color: #212121;
+    }
