@@ -1,0 +1,49 @@
+<!doctype html>
+<html ng-app="myApp">
+<head>
+  <title>User Login and Sessions</title>
+  <link rel="stylesheet" type="text/css" 
+      href="/static/css/styles.css" />
+</head>
+<body>
+  <div class="form-container" ng-controller="myController">
+    <p class="form-header">User Profile</p>
+    <form method="POST" action="/user/update">
+       <label>Username:</label>
+         <input type="text" name="username" 
+                ng-model="user.username" disabled><br>
+       <label>Email:</label>
+         <input type="email" name="email" 
+                ng-model="user.email"><br>
+       <label>Favorite Color:</label>
+         <input type="text" name="color" 
+                ng-model="user.color"><br>
+       <label>Image:</label>
+         <input type="text" name="img_url" 
+                ng-model="user.img_url"><br>
+       <input type="submit" value="Save">
+    </form>       
+   
+    <form method="POST" action="/user/updateById">
+      <div class="form-group">
+        <label>Make:</label> <input id="make" type="text" class="form-control" ng-model="car.make"></input>
+        <strong>Model: </strong> <input type="text" class="form-control" ng-model="model"></input>
+         <br> <br>
+        <strong>Year: </strong> <input type="text" class="form-control" ng-model="year"></input>
+        <strong>Miles: </strong> <input type="text" class="form-control" ng-model="miles"></input>
+        <br> <br>
+        <strong>Picture URL:</strong> <input type="text" class="form-control" ng-model="picUrl"></input>
+        <button type="submit" class="btn btn-primary">Add Car</button>
+      </div>
+    </form>
+
+  </div>
+  <form method="POST" action="/user/delete">
+    <input type="submit" value="Delete User">
+  </form>
+  <hr><%= msg %>
+  <script src="http://code.angularjs.org/1.2.9/angular.min.js"></script>
+  <script src="/static/js/my_app.js"></script>
+  <a href="/">Home</a>
+</body>
+</html>
